@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendamento - PetShop</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../assets/css/styles.css"> <!-- Caminho relativo corrigido -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
       <header id="header"></header>
       <script>
         document.addEventListener('DOMContentLoaded', function() {
-            fetch('../partials/header.html')
+            fetch('../partials/header.html') <!-- Caminho relativo correto para o header -->
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('header').innerHTML = data;
@@ -78,11 +78,11 @@
               <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
                   <h5 class="text-uppercase">Navegação</h5>
                   <ul class="list-unstyled">
-                      <li><a href="index.html" class="text-dark">Home</a></li>
-                      <li><a href="pages/produtosServicos.html" class="text-dark">Produtos & Serviços</a></li>
-                      <li><a href="pages/cadastroClientePet.html" class="text-dark">Cadastro Cliente/Pet</a></li>
-                      <li><a href="pages/agendamento.html" class="text-dark">Agendamento</a></li>
-                      <li><a href="pages/contato.html" class="text-dark">Contato</a></li>
+                      <li><a href="../index.html" class="text-dark">Home</a></li> <!-- Caminho ajustado -->
+                      <li><a href="produtosServicos.html" class="text-dark">Produtos & Serviços</a></li>
+                      <li><a href="cadastroClientePet.html" class="text-dark">Cadastro Cliente/Pet</a></li>
+                      <li><a href="agendamento.html" class="text-dark">Agendamento</a></li>
+                      <li><a href="contato.html" class="text-dark">Contato</a></li>
                   </ul>
               </div>
     
