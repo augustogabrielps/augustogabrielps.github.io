@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - PetShop</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Caminho relativo para o CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="index.html">
-                <img src="/assets/images/logo.png" style="height: 40px;">
+                <img src="assets/images/logo.png" style="height: 40px;"> <!-- Caminho relativo para o logo -->
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -23,118 +22,94 @@
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="produtosServicos.html">Produtos & Serviços</a>
+                        <a class="nav-link" href="pages/produtosServicos.html">Produtos & Serviços</a> <!-- Caminho relativo para a página Produtos & Serviços -->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="cadastroClientePet.html">Cadastro Cliente/Pet</a>
+                        <a class="nav-link" href="pages/cadastroClientePet.html">Cadastro Cliente/Pet</a> <!-- Caminho relativo para a página de cadastro -->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="agendamento.html">Agendamento</a>
+                        <a class="nav-link" href="pages/agendamento.html">Agendamento</a> <!-- Caminho relativo para a página de agendamento -->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contato.html">Contato</a>
+                        <a class="nav-link" href="pages/contato.html">Contato</a> <!-- Caminho relativo para a página de contato -->
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
+    
     <main class="container mt-4">
         <div class="jumbotron">
             <h1 class="display-4">Bem-vindo à PetShop FundWebP2</h1>
             <p class="lead">Cuidamos do seu pet com carinho e profissionalismo.</p>
             <hr class="my-4">
             <p>Acesse nossos serviços e produtos, ou faça o cadastro do seu pet agora mesmo!</p>
-            <a class="btn btn-primary btn-lg" href="produtosServicos.html" role="button">Ver Produtos e Serviços</a>
-            <a class="btn btn-secondary btn-lg" href="cadastroClientePet.html" role="button">Cadastrar Pet</a>
+            <a class="btn btn-primary btn-lg" href="pages/produtosServicos.html" role="button">Ver Produtos e Serviços</a>
+            <a class="btn btn-secondary btn-lg" href="pages/cadastroClientePet.html" role="button">Cadastrar Pet</a>
         </div>
     </main>
+    
     <footer class="text-center text-lg-start bg-light text-muted">
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
             <div class="me-5 d-none d-lg-block">
                 <span> O melhor para o seu pet está aqui!</span>
             </div>
             <div>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-google"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-instagram"></i>
-                </a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-twitter"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-google"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-instagram"></i></a>
             </div>
         </section>
-        <section class="">
-            <div class="container text-center text-md-start mt-5">
-                <div class="row mt-3">
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            <i class="fas fa-gem me-3"></i>PetShop
-                        </h6>
-                        <p>
-                            Siga-nos nas redes sociais
-                        </p>
-                        <p>
-                            Instagram - @FundWebP2
-                            Facebook - FWP2
-                        </p>
+        
+        <section class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        <i class="fas fa-gem me-3"></i>PetShop
+                    </h6>
+                    <p>Siga-nos nas redes sociais</p>
+                    <p>Instagram - @FundWebP2<br>Facebook - FWP2</p>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="bg-light text-center text-lg-start mt-4">
+            <div class="container p-4">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Contato</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li><i class="fas fa-envelope"></i> Email: petfw2@petshop.com</li>
+                            <li><i class="fas fa-phone"></i> Telefone: (51) 981114150</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Endereço: Av. Ipiranga, 6681 - Partenon, Porto Alegre - RS</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Navegação</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="text-dark">Home</a></li>
+                            <li><a href="pages/produtosServicos.html" class="text-dark">Produtos & Serviços</a></li>
+                            <li><a href="pages/cadastroClientePet.html" class="text-dark">Cadastro Cliente/Pet</a></li>
+                            <li><a href="pages/agendamento.html" class="text-dark">Agendamento</a></li>
+                            <li><a href="pages/contato.html" class="text-dark">Contato</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Informações Legais</h5>
+                        <p>© 2024 PetShop. Todos os direitos reservados.<br>Desenvolvido por Augusto Santos.</p>
                     </div>
                 </div>
             </div>
-        </section>
-      <footer class="bg-light text-center text-lg-start mt-4">
-        <div class="container p-4">
-            <div class="row">
-                <!-- Coluna de informações de contato -->
-                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Contato</h5>
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <i class="fas fa-envelope"></i> Email: petfw2@petshop.com
-                        </li>
-                        <li>
-                            <i class="fas fa-phone"></i> Telefone: (51) 981114150
-                        </li>
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i> Endereço: Av. Ipiranga, 6681 - Partenon, Porto Alegre - RS, 90619-900
-                        </li>
-                    </ul>
-                </div>
-                
-                <!-- Coluna de navegação -->
-                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Navegação</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-dark">Home</a></li>
-                        <li><a href="produtosServicos.html" class="text-dark">Produtos & Serviços</a></li>
-                        <li><a href="cadastroClientePet.html" class="text-dark">Cadastro Cliente/Pet</a></li>
-                        <li><a href="agendamento.html" class="text-dark">Agendamento</a></li>
-                        <li><a href="contato.html" class="text-dark">Contato</a></li>
-                    </ul>
-                </div>
-      
-                <!-- Coluna de informações legais -->
-                <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Informações Legais</h5>
-                    <p>
-                        © 2024 PetShop. Todos os direitos reservados.
-                        <br>
-                        Desenvolvido por Augusto Santos.
-                    </p>
-                </div>
-            </div>
-        </div>
+        </footer>
         
-        <!-- Barra inferior do rodapé -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             <a class="text-dark" href="https://www.petshop.com">petshop.com</a>
         </div>
-      </footer>
-      
+    </footer>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
