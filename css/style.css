@@ -1,0 +1,39 @@
+body, h1, p {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #f8f9fa;
+}
+
+/* Tamanho padrão do logo */
+.logo {
+    width: 100px; /* Menor tamanho padrão */
+    height: auto;
+}
+
+/* Tamanho maior do logo em dispositivos mais largos */
+@media (min-width: 768px) {
+    .logo {
+        width: 150px; /* Tamanho maior para telas maiores */
+    }
+}
+
+/* Estilo para o texto do carrossel */
+.carousel-caption h5,
+.carousel-caption p {
+    color: black; /* Define a cor do texto para preto */
+}
+
+/* Caso os textos ainda não estejam visíveis como pretos devido à herança ou especificidade de outras regras */
+.carousel-caption {
+    color: black; /* Assegura que todo o texto dentro do caption seja preto */
+}
+
+

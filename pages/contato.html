@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - PetShop</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- header.html -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="../assets/images/logo.png" alt="PetShop Logo" style="height: 40px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-link" href="../pages/index.html">Home</a>
+            <a class="nav-link" href="../pages/produtosServicos.html">Produtos & Serviços</a>
+            <a class="nav-link" href="../pages/cadastroClientePet.html">Cadastro Cliente/Pet</a>
+            <a class="nav-link" href="../pages/agendamento.html">Agendamento</a>
+            <a class="nav-link" href="../pages/contato.html">Contato</a>
+        </div>
+    </div>
+</nav>
+
+        </nav>
+    </header>
+    <main class="container mt-4">
+        <h1>Entre em Contato</h1>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" class="form-control" id="name" placeholder="Digite seu nome">
+                <small id="nameError" class="form-text text-danger"></small>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+                <small id="emailError" class="form-text text-danger"></small>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensagem:</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Digite sua mensagem aqui"></textarea>
+                <small id="messageError" class="form-text text-danger"></small>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+        </form>
+    </main>
+    <footer class="text-center p-4">
+        © 2024 PetShop. Todos os direitos reservados.
+    </footer>
+
+    <script>
+        // Função p/ validar o formulário
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            let valid = true;
+
+            // Limpa os erros anteriores
+            document.getElementById('nameError').innerText = '';
+            document.getElementById('emailError').innerText = '';
+            document.getElementById('messageError').innerText = '';
+
+            // Valida nome
+            const name = document.getElementById('name').value;
+            if (!name) {
+                document.getElementById('nameError').innerText = 'Por favor, insira seu nome.';
+                valid = false;
+            }
+
+            // Valida email
+            const email = document.getElementById('email').value;
+            if (!email || !email.includes('@')) {
+                document.getElementById('emailError').innerText = 'Por favor, insira um email válido.';
+                valid = false;
+            }
+
+            // Valida mensagem
+            const message = document.getElementById('message').value;
+            if (!message) {
+                document.getElementById('messageError').innerText = 'Por favor, insira sua mensagem.';
+                valid = false;
+            }
+
+            // Se formulário não for válido --> previne o envio
+            if (!valid) {
+                event.preventDefault();
+            }
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento - PetShop</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+      <header id="header"></header>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('../partials/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                })
+                .catch(error => console.error('Failed to load header:', error));
+        });
+        </script>
+    </header>
+    <main class="container mt-4">
+        <h1>Agendamento de Serviços</h1>
+        <form>
+            <div class="form-group">
+                <label for="serviceType">Tipo de Serviço:</label>
+                <select class="form-control" id="serviceType">
+                    <option>Banho</option>
+                    <option>Tosa</option>
+                    <option>Consulta Veterinária</option>
+                    <option>Vacinação</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="petName">Nome do Pet:</label>
+                <input type="text" class="form-control" id="petName" placeholder="Digite o nome do seu pet">
+            </div>
+            <div class="form-group">
+                <label for="appointmentDate">Data:</label>
+                <input type="date" class="form-control" id="appointmentDate">
+            </div>
+            <div class="form-group">
+                <label for="appointmentTime">Horário:</label>
+                <input type="time" class="form-control" id="appointmentTime">
+            </div>
+            
+            <!-- Opção de Telebusca -->
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="telebusca">
+                <label class="form-check-label" for="telebusca">Desejo adicionar o serviço de telebusca</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Agendar</button>
+        </form>
+    </main>
+    <footer class="bg-light text-center text-lg-start mt-4">
+      <div class="container p-4">
+          <div class="row">
+              <!-- Coluna de informações de contato -->
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">Contato</h5>
+                  <ul class="list-unstyled mb-0">
+                      <li>
+                          <i class="fas fa-envelope"></i> Email: petfw2@petshop.com
+                      </li>
+                      <li>
+                          <i class="fas fa-phone"></i> Telefone: (51) 981114150
+                      </li>
+                      <li>
+                          <i class="fas fa-map-marker-alt"></i> Endereço: Av. Ipiranga, 6681 - Partenon, Porto Alegre - RS, 90619-900
+                      </li>
+                  </ul>
+              </div>
+              
+              <!-- Coluna de navegação -->
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">Navegação</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="index.html" class="text-dark">Home</a></li>
+                      <li><a href="produtosServicos.html" class="text-dark">Produtos & Serviços</a></li>
+                      <li><a href="cadastroClientePet.html" class="text-dark">Cadastro Cliente/Pet</a></li>
+                      <li><a href="agendamento.html" class="text-dark">Agendamento</a></li>
+                      <li><a href="contato.html" class="text-dark">Contato</a></li>
+                  </ul>
+              </div>
+    
+              <!-- Coluna de informações legais -->
+              <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">Informações Legais</h5>
+                  <p>
+                      © 2024 PetShop. Todos os direitos reservados.
+                      <br>
+                      Desenvolvido por Augusto Santos.
+                  </p>
+              </div>
+          </div>
+      </div>
+      
+      <!-- Barra inferior do rodapé -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          <a class="text-dark" href="https://www.petshop.com">petshop.com</a>
+      </div>
+    </footer>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
